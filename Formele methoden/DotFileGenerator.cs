@@ -35,7 +35,9 @@ namespace Formele_methoden
                 writer.WriteLine(@"NOTHING [label="""", shape=none]");
                 foreach(var label in labels)
                 {
-                    if(automata.StartStates.Contains(label.Key))
+                    if (automata.StartStates.Contains(label.Key) && automata.FinalStates.Contains(label.Key))
+                        writer.WriteLine($@"{label.Value} [label=""{label.Key}"", shape=ellipse, style=filled, color=green]");
+                    else if (automata.StartStates.Contains(label.Key))
                         writer.WriteLine($@"{label.Value} [label=""{label.Key}"", shape=ellipse, style=filled, color=lightblue]");
                     else if (automata.FinalStates.Contains(label.Key))
                         writer.WriteLine($@"{label.Value} [label=""{label.Key}"", shape=ellipse, style=filled, color=yellowgreen]");
