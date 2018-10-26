@@ -1,0 +1,48 @@
+digraph dfa {
+	
+	/*
+		default zal de graph van boven naar beneden worden getekend. 
+		Met rankdir = LR wordt de voorkeursrichting gewijzigd naar links - rechts
+	*/
+rankdir=LR;
+
+	/* Definieer de nodes met attributen voor vorm, kleur en label
+		- default shape is ellipse
+		- met periperies=2 kun je een dubbele omtrek tekenen voor een eindtoestand
+		- door een node met een lege label kun je de pijl naar de starttoestand tekenen
+		- als je geen attribuut label="..." definieert,
+			dan is de label gelijk aan de naam van de node.
+			(test maar eens het verwijderen van label="" bij node NOTHING)
+			
+		- manual colors: http://soc.if.usp.br/manual/graphviz/html/info/colors.html
+		- manual shapes: http://soc.if.usp.br/manual/graphviz/html/info/shapes.html
+		
+		- aanroep in cmd:
+				dot -Tsvg < Les5extraOpgave2NfaToDfa > graph.svg
+				dot -Tpng < Les5extraOpgave2NfaToDfa > graph.png
+	*/
+	
+  NOTHING [label="", shape=none]
+  1 [label="0,1,2,4,7", shape=ellipse, style=filled, color=lightblue]
+  2 [label="3,8,6,7,1,2,4",shape=ellipse]
+  3 [label="5,6,7,1,2,4",shape=ellipse]
+  4 [label="5,9,6,7,1,2,4",shape=ellipse]
+  5 [label="5,10,6,7,1,2,4",shape=ellipse, peripheries=2, style=filled, color=yellowgreen]
+
+
+  NOTHING -> 1
+  1 -> 2 [label="a"]
+  1 -> 3 [label="b"]
+
+  2 -> 2 [label="a"]
+  2 -> 4 [label="b"]
+
+  3 -> 2 [label="a"]
+  3 -> 3 [label="b"]
+ 
+  4 -> 2 [label="a"]
+  4 -> 5 [label="b"]
+
+  5 -> 2 [label="a"]
+  5 -> 3 [label="b"]
+}

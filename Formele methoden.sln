@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formele methoden", "Formele methoden\Formele methoden.csproj", "{C2DDBFD7-5869-4FFF-BBDE-39CA6604DEEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2DDBFD7-5869-4FFF-BBDE-39CA6604DEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DDBFD7-5869-4FFF-BBDE-39CA6604DEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DDBFD7-5869-4FFF-BBDE-39CA6604DEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DDBFD7-5869-4FFF-BBDE-39CA6604DEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DA183D9-9EF8-4781-8A7C-0E1F336F960D}
+	EndGlobalSection
+EndGlobal
