@@ -48,7 +48,7 @@ namespace Formele_methoden
             int symbolCompare = Symbol.CompareTo(other.Symbol);
             int toCompare = ToState.Equals(other.ToState) ? 1 : 0;
 
-            return (fromCompare != 0 ? fromCompare : (symbolCompare != 0 ? symbolCompare : toCompare));
+            return fromCompare != 0 ? fromCompare : (symbolCompare != 0 ? symbolCompare : toCompare);
         }
 
         public string toString()

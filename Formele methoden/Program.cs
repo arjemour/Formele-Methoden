@@ -17,6 +17,7 @@ namespace Formele_methoden
             var evenbOnevena = PracticumLes1Voorbeelden.EvenbOnevena();
             var evenbEindigaab = PracticumLes1Voorbeelden.EvenbEindigaab();
             var beginabbBevatbaab = PracticumLes1Voorbeelden.BeginabbBevatbaab();
+            beginabbBevatbaab.AcceptInputDfa("abbaab");
 
             DotFileGenerator dotFileGenerator = new DotFileGenerator();
             dotFileGenerator.WriteToDotFile(slide1, "slide1", "", true);
